@@ -7,10 +7,10 @@ export const ImagePreview: React.FC<{
 }> = ({ image, onZoom }) => {
   const onClick = useCallback(() => {
     onZoom(image);
-  }, [image]);
+  }, [image, onZoom]);
   return (
     <div className="image-preview" onClick={onClick}>
-      <img src={`/api/small-cached/${image}`} />
+      <img src={`/api/${image}`} />
     </div>
   );
 };
