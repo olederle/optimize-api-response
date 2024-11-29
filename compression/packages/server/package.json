@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "npx tsc",
+    "clean": "del-cli --force dist",
+    "dev": "nodemon src/index.ts",
+    "download-file": "npx ts-node src/scripts/download-file.ts",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "express": "4.21.1",
+    "http-compression": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/express": "5.0.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "22.10.1",
+    "del-cli": "6.0.0",
+    "fs-extra": "11.2.0",
+    "nodemon": "3.1.7",
+    "ts-node": "10.9.2",
+    "typescript": "5.6.2"
+  }
+}

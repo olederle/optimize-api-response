@@ -1,0 +1,12 @@
+{
+  "name": "payload-size",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "app": "pnpm run client & pnpm run server",
+    "client": "pnpm --filter \"client\" run dev",
+    "download-images": "pnpm --filter \"server\" download-images",
+    "server": "pnpm --filter \"server\" run dev"
+  }
+}

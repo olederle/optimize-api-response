@@ -1,0 +1,10 @@
+.content {
+  display: flex;
+  gap: 30px;
+}
+
+.content-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

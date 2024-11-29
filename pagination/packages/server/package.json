@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "npx tsc",
+    "clean": "del-cli --force dist",
+    "dev": "nodemon src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "express": "4.21.1",
+    "sqlite": "5.1.1",
+    "sqlite3": "5.1.7"
+  },
+  "devDependencies": {
+    "@types/express": "5.0.0",
+    "@types/node": "22.10.1",
+    "del-cli": "6.0.0",
+    "nodemon": "3.1.7",
+    "ts-node": "10.9.2",
+    "typescript": "5.6.2"
+  }
+}

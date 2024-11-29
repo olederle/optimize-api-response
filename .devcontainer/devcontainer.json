@@ -1,0 +1,16 @@
+{
+    "name": "Node.js & TypeScript",
+    "image": "mcr.microsoft.com/devcontainers/typescript-node:22-bookworm",
+    "appPort": 8080,
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "esbenp.prettier-vscode"
+            ],
+            "settings": {
+                "remote.autoForwardPorts": false
+            }
+        }
+    },
+    "forwardPorts": [8080]
+}

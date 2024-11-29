@@ -1,0 +1,15 @@
+table.user-table {
+    border-spacing: 0;
+}
+
+table.user-table td, table.user-table th {
+    padding: 5px;
+}
+
+table.user-table thead tr th {
+    border-bottom: 1px solid rgb(51, 45, 45);
+}
+
+table.user-table tr:nth-child(even) {
+    background-color: rgb(241, 241, 241);
+}
